@@ -82,6 +82,25 @@ const faqs = [
 
 export default function Home() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Surhires",
+            url: "https://surhires.vercel.app",
+            description:
+              "Surhires connects employers with vetted candidates and helps job seekers find roles that match their skills.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: "https://surhires.vercel.app/jobs?q={search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
     <main className="bg-warm-50 text-navy-950">
     
       <section className="mx-auto grid max-w-7xl items-center gap-10 overflow-hidden px-4 py-12 sm:px-6 md:gap-12 md:px-12 md:py-24 lg:grid-cols-2">
@@ -403,5 +422,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
   );
 }

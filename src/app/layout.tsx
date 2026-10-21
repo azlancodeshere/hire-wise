@@ -28,6 +28,17 @@ export const metadata: Metadata = {
   },
   description:
     "Surhires connects employers with vetted candidates and helps job seekers find roles that match their skills. Post a job or browse open positions today.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://surhires.vercel.app",
+  },
   openGraph: {
     type: "website",
     siteName: "Surhires",

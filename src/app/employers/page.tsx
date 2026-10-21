@@ -6,7 +6,17 @@ export const metadata: Metadata = {
   title: "For Employers — Pricing & Job Posting",
   description:
     "Post a job on Surhires and reach vetted candidates fast. Compare Starter, Growth and Scale plans for teams of every size.",
+  alternates: {
+    canonical: "https://surhires.vercel.app/employers",
+  },
   openGraph: {
+    title: "Hire on Surhires — Plans & Job Posting",
+    description:
+      "Post a job and reach vetted candidates fast. Compare Starter, Growth and Scale plans.",
+    url: "https://surhires.vercel.app/employers",
+  },
+  twitter: {
+    card: "summary",
     title: "Hire on Surhires — Plans & Job Posting",
     description:
       "Post a job and reach vetted candidates fast. Compare Starter, Growth and Scale plans.",

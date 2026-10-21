@@ -5,10 +5,20 @@ export const metadata: Metadata = {
   title: "Find Jobs",
   description:
     "Browse open roles across engineering, design, data and marketing. Filter by role, location and job type on Surhires.",
+  alternates: {
+    canonical: "https://surhires.vercel.app/jobs",
+  },
   openGraph: {
     title: "Find Jobs on Surhires",
     description:
       "Browse open roles across engineering, design, data and marketing. Filter by role, location and job type.",
+    url: "https://surhires.vercel.app/jobs",
+  },
+  twitter: {
+    card: "summary",
+    title: "Find Jobs on Surhires",
+    description:
+      "Browse open roles across engineering, design, data and marketing.",
   },
 };
 
