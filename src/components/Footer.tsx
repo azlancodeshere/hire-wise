@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const columns = [
   {
@@ -30,7 +31,14 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:grid-cols-2 md:grid-cols-5 md:px-12">
         <div className="md:col-span-2">
-          <Link href="/" className="text-2xl font-bold text-navy-900">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-navy-900">
+            <Image
+              src="/surhires-mark.svg"
+              alt=""
+              width={32}
+              height={32}
+              className="h-8 w-8"
+            />
             sur<span className="text-brand-700">hires</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-6 text-slate-600">

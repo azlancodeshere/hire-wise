@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const links = [
@@ -21,8 +22,15 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tight text-navy-900"
+          className="flex items-center gap-2 text-2xl font-bold tracking-tight text-navy-900"
         >
+          <Image
+            src="/surhires-mark.svg"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
           sur<span className="text-brand-700">hires</span>
         </Link>
 

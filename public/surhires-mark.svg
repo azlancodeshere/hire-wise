@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Surhires logo mark">
+  <rect width="40" height="40" rx="10" fill="#0f766e"/>
+  <path d="M12 22.5l5.5 5.5L28.5 17" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="28.5" cy="13" r="2.5" fill="#ccfbf1"/>
+</svg>

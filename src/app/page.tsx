@@ -336,10 +336,12 @@ export default function Home() {
                 <blockquote className="mt-2 leading-7 text-slate-700">
                   {item.quote}
                 </blockquote>
-                <figcaption className="mt-6 border-t border-slate-200 pt-5">
-                  <p className="font-semibold text-navy-900">{item.name}</p>
-                  <p className="mt-0.5 text-sm text-slate-500">{item.role}</p>
-                </figcaption>
+                <p className="mt-6 border-t border-slate-200 pt-5">
+                  <span className="font-semibold text-navy-900">{item.name}</span>
+                  <span className="mt-0.5 block text-sm text-slate-500">
+                    {item.role}
+                  </span>
+                </p>
               </li>
             ))}
           </ul>
