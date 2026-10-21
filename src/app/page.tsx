@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <main className="bg-warm-50 text-navy-950">
     
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 md:gap-12 md:px-12 md:py-24 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 overflow-hidden px-4 py-12 sm:px-6 md:gap-12 md:px-12 md:py-24 lg:grid-cols-2">
         <div>
           <p className="mb-6 inline-flex rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800">
             India&apos;s hiring platform for growing teams
@@ -118,7 +118,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 sm:gap-6">
+          <dl className="mt-10 grid max-w-md grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <dt className="text-sm font-medium text-slate-700">Avg. time-to-hire</dt>
               <dd className="mt-1 text-xl font-bold text-navy-950 sm:text-2xl">9 days</dd>
@@ -135,41 +135,41 @@ export default function Home() {
         </div>
 
         
-        <div className="relative rounded-3xl bg-brand-100 p-4 sm:p-6 md:p-10">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl sm:p-8">
-            <div className="flex items-center justify-between gap-3">
+        <div className="relative overflow-hidden rounded-2xl bg-brand-100 p-3 sm:rounded-3xl sm:p-6 md:p-10">
+          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xl sm:rounded-2xl sm:p-6 md:p-8">
+            <div className="flex items-start justify-between gap-2 sm:items-center sm:gap-3">
               <div>
                 <p className="text-sm font-semibold text-brand-700">Matched for you</p>
-                <h2 className="mt-1 text-xl font-bold text-navy-950">
+                <h2 className="mt-1 text-lg font-bold text-navy-950 sm:text-xl">
                   New roles this week
                 </h2>
               </div>
               <Link
                 href="/jobs"
-                className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-800 transition hover:bg-brand-100"
+                className="hidden shrink-0 rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-800 transition hover:bg-brand-100 sm:inline-flex"
               >
                 View all
               </Link>
             </div>
 
-            <ul className="mt-7 space-y-4">
+            <ul className="mt-5 space-y-3 sm:mt-7 sm:space-y-4">
               {featuredRoles.map((role) => (
                 <li
                   key={role.title}
-                  className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-brand-500 hover:shadow-sm"
+                  className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-3 transition hover:border-brand-500 hover:shadow-sm sm:gap-4 sm:rounded-xl sm:p-4"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-950 text-base font-bold text-white">
+                  <div className="hidden h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-navy-950 text-sm font-bold text-white sm:flex sm:h-12 sm:w-12 sm:rounded-xl sm:text-base">
                     {role.company.charAt(0)}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="truncate font-semibold text-navy-950">
+                    <h3 className="truncate text-sm font-semibold text-navy-950 sm:text-base">
                       {role.title}
                     </h3>
-                    <p className="mt-0.5 truncate text-sm font-medium text-slate-700">
+                    <p className="mt-0.5 truncate text-xs font-medium text-slate-700 sm:text-sm">
                       {role.company} · {role.location}
                     </p>
                   </div>
-                  <span className="shrink-0 text-sm font-bold text-brand-700">
+                  <span className="hidden shrink-0 text-sm font-bold text-brand-700 sm:inline">
                     {role.type}
                   </span>
                 </li>
