@@ -84,13 +84,13 @@ export default function Home() {
   return (
     <main className="bg-warm-50 text-navy-950">
     
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:px-12 md:py-24 lg:grid-cols-2">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 md:gap-12 md:px-12 md:py-24 lg:grid-cols-2">
         <div>
           <p className="mb-6 inline-flex rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800">
             India&apos;s hiring platform for growing teams
           </p>
 
-          <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-navy-950 sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight text-navy-950 sm:text-4xl md:text-5xl lg:text-6xl">
             Hire faster.
             <br />
             <span className="text-brand-700">Find work that fits.</span>
@@ -118,24 +118,24 @@ export default function Home() {
             </Link>
           </div>
 
-          <dl className="mt-10 grid max-w-md grid-cols-3 gap-6">
+          <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 sm:gap-6">
             <div>
               <dt className="text-sm font-medium text-slate-700">Avg. time-to-hire</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-950">9 days</dd>
+              <dd className="mt-1 text-xl font-bold text-navy-950 sm:text-2xl">9 days</dd>
             </div>
             <div>
               <dt className="text-sm font-medium text-slate-700">Open roles</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-950">1,200+</dd>
+              <dd className="mt-1 text-xl font-bold text-navy-950 sm:text-2xl">1,200+</dd>
             </div>
             <div>
               <dt className="text-sm font-medium text-slate-700">Companies hiring</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-950">340</dd>
+              <dd className="mt-1 text-xl font-bold text-navy-950 sm:text-2xl">340</dd>
             </div>
           </dl>
         </div>
 
         
-        <div className="relative rounded-3xl bg-brand-100 p-6 sm:p-10">
+        <div className="relative rounded-3xl bg-brand-100 p-4 sm:p-6 md:p-10">
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl sm:p-8">
             <div className="flex items-center justify-between gap-3">
               <div>
@@ -177,7 +177,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="absolute -bottom-4 -left-2 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-lg sm:-left-5">
+          <div className="mt-4 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-lg sm:absolute sm:-bottom-4 sm:-left-5 sm:mt-0">
             <p className="text-sm font-bold text-navy-950">
               3 new matches today
             </p>
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       
-      <section className="px-6 py-20 md:px-12">
+      <section className="px-4 py-14 sm:px-6 sm:py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="font-bold uppercase tracking-widest text-brand-700">
@@ -267,7 +267,7 @@ export default function Home() {
       </section>
 
      
-      <section className="border-y border-slate-200 bg-white px-6 py-20 md:px-12">
+      <section className="border-y border-slate-200 bg-white px-4 py-14 sm:px-6 sm:py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
@@ -313,7 +313,7 @@ export default function Home() {
       </section>
 
      
-      <section id="testimonials" className="px-6 py-20 md:px-12">
+      <section id="testimonials" className="px-4 py-14 sm:px-6 sm:py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="font-bold uppercase tracking-widest text-brand-700">
@@ -349,7 +349,7 @@ export default function Home() {
       </section>
 
     
-      <section id="faq" className="border-t border-slate-200 bg-white px-6 py-20 md:px-12">
+      <section id="faq" className="border-t border-slate-200 bg-white px-4 py-14 sm:px-6 sm:py-20 md:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-3">
           <div>
             <p className="font-bold uppercase tracking-widest text-brand-700">
@@ -376,8 +376,8 @@ export default function Home() {
       </section>
 
       
-      <section className="px-6 py-20 md:px-12">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-navy-950 px-7 py-12 text-white shadow-xl sm:px-12 sm:py-16">
+      <section className="px-4 py-14 sm:px-6 sm:py-20 md:px-12">
+        <div className="mx-auto max-w-7xl rounded-2xl bg-navy-950 px-5 py-10 text-white shadow-xl sm:rounded-3xl sm:px-12 sm:py-16">
           <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">
             Ready for what comes next?
           </h2>

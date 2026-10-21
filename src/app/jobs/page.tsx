@@ -14,13 +14,13 @@ export const metadata: Metadata = {
 
 export default function JobsPage() {
   return (
-    <main className="bg-warm-50 px-6 py-16 text-navy-950 md:px-12 md:py-20">
+    <main className="bg-warm-50 px-4 py-10 text-navy-950 sm:px-6 sm:py-16 md:px-12 md:py-20">
       <div className="mx-auto max-w-6xl">
         <p className="font-bold uppercase tracking-widest text-brand-700">
           Explore opportunities
         </p>
 
-        <h1 className="mt-3 text-4xl font-bold text-navy-950 md:text-5xl">
+        <h1 className="mt-3 text-3xl font-bold text-navy-950 sm:text-4xl md:text-5xl">
           Find your next opportunity
         </h1>
 

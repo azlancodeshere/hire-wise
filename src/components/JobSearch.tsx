@@ -126,7 +126,7 @@ export default function JobSearch() {
           event.preventDefault();
           setFiltersApplied(true);
         }}
-        className="mt-10 grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-4"
+        className="mt-8 grid gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:mt-10 sm:rounded-2xl sm:p-6 md:grid-cols-4"
       >
         <div className="md:col-span-1">
           <label htmlFor="role" className="mb-2 block text-sm font-bold text-navy-950">
@@ -223,28 +223,28 @@ export default function JobSearch() {
         </h2>
 
         {filteredJobs.length > 0 ? (
-          <ul className="grid gap-5 md:grid-cols-2">
+          <ul className="grid gap-4 sm:gap-5 md:grid-cols-2">
             {filteredJobs.map((job) => (
               <li
                 key={job.id}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md"
+                className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-500 hover:shadow-md sm:rounded-2xl sm:p-6"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <p className="text-sm font-bold text-brand-700">
                       {job.type}
                     </p>
-                    <h3 className="mt-1.5 text-xl font-bold text-navy-950">
+                    <h3 className="mt-1.5 text-lg font-bold text-navy-950 sm:text-xl">
                       {job.title}
                     </h3>
                     <p className="mt-1 font-medium text-slate-700">{job.company}</p>
                   </div>
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-950 text-base font-bold text-white shadow-sm">
+                  <div className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-950 text-base font-bold text-white shadow-sm sm:flex">
                     {job.company.charAt(0)}
                   </div>
                 </div>
 
-                <dl className="mt-5 flex flex-wrap gap-x-6 gap-y-2 border-t border-slate-200 pt-4 text-sm">
+                <dl className="mt-4 flex flex-wrap gap-x-4 gap-y-2 border-t border-slate-200 pt-3 text-sm sm:mt-5 sm:gap-x-6 sm:pt-4">
                   <div className="flex gap-2">
                     <dt className="font-medium text-slate-600">Location:</dt>
                     <dd className="font-semibold text-navy-950">{job.location}</dd>

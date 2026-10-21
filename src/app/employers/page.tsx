@@ -62,11 +62,11 @@ export default function EmployersPage() {
   return (
     <main className="bg-warm-50 text-navy-950">
       
-      <section className="px-6 py-16 text-center md:px-12 md:py-24">
+      <section className="px-4 py-12 text-center sm:px-6 sm:py-16 md:px-12 md:py-24">
         <p className="font-bold uppercase tracking-widest text-brand-700">
           For employers
         </p>
-        <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-bold leading-tight text-navy-950 md:text-6xl">
+        <h1 className="mx-auto mt-4 max-w-3xl text-3xl font-bold leading-tight text-navy-950 sm:text-4xl md:text-5xl lg:text-6xl">
           Find the people who move your business forward.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700">
@@ -95,7 +95,7 @@ export default function EmployersPage() {
         aria-label="Surhires hiring results"
         className="border-y border-slate-200 bg-white py-12"
       >
-        <dl className="mx-auto grid max-w-5xl grid-cols-2 gap-8 px-6 text-center md:grid-cols-4">
+        <dl className="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-4 text-center sm:gap-8 sm:px-6 md:grid-cols-4">
           {[
             ["48 hrs", "to first applications"],
             ["9 days", "average time-to-hire"],
@@ -103,7 +103,7 @@ export default function EmployersPage() {
             ["92%", "renew after first month"],
           ].map(([stat, label]) => (
             <div key={label}>
-              <dd className="text-3xl font-bold text-navy-950">{stat}</dd>
+              <dd className="text-2xl font-bold text-navy-950 sm:text-3xl">{stat}</dd>
               <dt className="mt-2 text-sm font-medium text-slate-700">{label}</dt>
             </div>
           ))}
@@ -111,7 +111,7 @@ export default function EmployersPage() {
       </section>
 
       
-      <section id="plans" className="px-6 py-16 md:px-12 md:py-20">
+      <section id="plans" className="px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <p className="font-bold uppercase tracking-widest text-brand-700">
@@ -187,9 +187,9 @@ export default function EmployersPage() {
      
       <section
         id="post-job"
-        className="border-t border-slate-200 bg-white px-6 py-16 md:px-12 md:py-24"
+        className="border-t border-slate-200 bg-white px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-24"
       >
-        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-12 md:grid-cols-2">
           <div>
             <p className="font-bold uppercase tracking-widest text-brand-700">
               Start hiring
