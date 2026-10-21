@@ -4,7 +4,23 @@ A production-quality marketing site for **Surhires**, a hiring/recruitment
 platform for employers and job seekers. Built as the Meru Technosoft
 frontend internship assignment (3 pages: Home, Jobs, Employers).
 
+**Live Demo:** [https://surhires.vercel.app](https://surhires.vercel.app)  
+**GitHub Repository:** [https://github.com/azlancodeshere/surhires](https://github.com/azlancodeshere/surhires)
+
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS 4
+
+## Lighthouse Mobile Audit (100 / 100 / 100 / 96)
+
+Tested on Mobile with Google Lighthouse:
+
+| Metric | Score | Status |
+| --- | --- | --- |
+| **Performance** | **96** | 🟢 Optimal |
+| **Accessibility** | **100** | 🟢 Perfect |
+| **Best Practices** | **100** | 🟢 Perfect |
+| **SEO** | **100** | 🟢 Perfect |
+
+![Lighthouse Mobile Audit Scores](./docs/lighthouse-score.png)
 
 ## Running locally
 
