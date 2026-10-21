@@ -5,7 +5,7 @@ platform for employers and job seekers. Built as the Meru Technosoft
 frontend internship assignment (3 pages: Home, Jobs, Employers).
 
 **Live Demo:** [https://surhires.vercel.app](https://surhires.vercel.app)  
-**GitHub Repository:** [https://github.com/azlancodeshere/surhires](https://github.com/azlancodeshere/surhires)
+**GitHub Repository:** [https://github.com/azlancodeshere/hire-wise](https://github.com/azlancodeshere/hire-wise)
 
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS 4
 
