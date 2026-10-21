@@ -5,6 +5,11 @@
  * Deep navy for trust, teal for energy, warm white for calm.
  * Defined once here; Tailwind generates utilities from them (e.g. bg-navy-900).
  */
+:root {
+  /* Enforce a consistent light color scheme across all browsers and OS themes */
+  color-scheme: light;
+}
+
 @theme {
   --color-navy-950: #06172d;
   --color-navy-900: #0b2545;
@@ -13,6 +18,7 @@
 
   --color-brand-50: #f0fdfa;
   --color-brand-100: #ccfbf1;
+  --color-brand-200: #99f6e4;
   --color-brand-500: #14b8a6;
   --color-brand-600: #0d9488;
   --color-brand-700: #0f766e;
@@ -31,11 +37,18 @@ body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Ensure form controls default to crisp light theme colors */
+input,
+select,
+textarea {
+  color: var(--color-navy-950);
+}
+
 /* Visible focus for keyboard users everywhere */
 :focus-visible {
   outline: 2px solid var(--color-brand-700);
   outline-offset: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 /* Honour the OS reduced-motion setting for all transitions and animations */

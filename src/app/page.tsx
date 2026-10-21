@@ -83,20 +83,20 @@ const faqs = [
 export default function Home() {
   return (
     <main className="bg-warm-50 text-navy-950">
-      {/* Hero — dual CTA for candidates and employers */}
+    
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:px-12 md:py-24 lg:grid-cols-2">
         <div>
-          <p className="mb-6 inline-flex rounded-full bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800">
+          <p className="mb-6 inline-flex rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-800">
             India&apos;s hiring platform for growing teams
           </p>
 
-          <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-navy-900 sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-navy-950 sm:text-5xl lg:text-6xl">
             Hire faster.
             <br />
             <span className="text-brand-700">Find work that fits.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700">
             Surhires brings employers and job seekers into one focused
             space — clear role descriptions, honest salaries and a hiring
             process that respects everyone&apos;s time.
@@ -112,7 +112,7 @@ export default function Home() {
 
             <Link
               href="/jobs"
-              className="rounded-lg border border-slate-300 bg-white px-6 py-4 font-semibold text-navy-900 shadow-sm transition hover:border-brand-600 hover:text-brand-700 active:bg-slate-50"
+              className="rounded-lg border border-slate-300 bg-white px-6 py-4 font-semibold text-navy-950 shadow-sm transition hover:border-brand-700 hover:text-brand-700 active:bg-slate-50"
             >
               Find a job <span aria-hidden="true">→</span>
             </Link>
@@ -120,33 +120,33 @@ export default function Home() {
 
           <dl className="mt-10 grid max-w-md grid-cols-3 gap-6">
             <div>
-              <dt className="text-sm text-slate-500">Avg. time-to-hire</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-900">9 days</dd>
+              <dt className="text-sm font-medium text-slate-700">Avg. time-to-hire</dt>
+              <dd className="mt-1 text-2xl font-bold text-navy-950">9 days</dd>
             </div>
             <div>
-              <dt className="text-sm text-slate-500">Open roles</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-900">1,200+</dd>
+              <dt className="text-sm font-medium text-slate-700">Open roles</dt>
+              <dd className="mt-1 text-2xl font-bold text-navy-950">1,200+</dd>
             </div>
             <div>
-              <dt className="text-sm text-slate-500">Companies hiring</dt>
-              <dd className="mt-1 text-2xl font-bold text-navy-900">340</dd>
+              <dt className="text-sm font-medium text-slate-700">Companies hiring</dt>
+              <dd className="mt-1 text-2xl font-bold text-navy-950">340</dd>
             </div>
           </dl>
         </div>
 
-        {/* Hero visual — sample matches card */}
+        
         <div className="relative rounded-3xl bg-brand-100 p-6 sm:p-10">
-          <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-xl sm:p-8">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xl sm:p-8">
             <div className="flex items-center justify-between gap-3">
               <div>
-                <p className="text-sm text-slate-500">Matched for you</p>
-                <h2 className="mt-1 text-xl font-bold text-navy-900">
+                <p className="text-sm font-semibold text-brand-700">Matched for you</p>
+                <h2 className="mt-1 text-xl font-bold text-navy-950">
                   New roles this week
                 </h2>
               </div>
               <Link
                 href="/jobs"
-                className="rounded-full bg-brand-50 px-3 py-2 text-sm font-semibold text-brand-800 transition hover:bg-brand-100"
+                className="rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-800 transition hover:bg-brand-100"
               >
                 View all
               </Link>
@@ -156,20 +156,20 @@ export default function Home() {
               {featuredRoles.map((role) => (
                 <li
                   key={role.title}
-                  className="flex items-center gap-4 rounded-xl border border-slate-200 p-4 transition hover:border-brand-500"
+                  className="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 transition hover:border-brand-500 hover:shadow-sm"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-base font-bold text-white">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-950 text-base font-bold text-white">
                     {role.company.charAt(0)}
                   </div>
                   <div className="min-w-0 flex-1">
-                    <h3 className="truncate font-semibold text-navy-900">
+                    <h3 className="truncate font-semibold text-navy-950">
                       {role.title}
                     </h3>
-                    <p className="mt-0.5 truncate text-sm text-slate-500">
+                    <p className="mt-0.5 truncate text-sm font-medium text-slate-700">
                       {role.company} · {role.location}
                     </p>
                   </div>
-                  <span className="shrink-0 text-sm font-medium text-brand-700">
+                  <span className="shrink-0 text-sm font-bold text-brand-700">
                     {role.type}
                   </span>
                 </li>
@@ -177,24 +177,24 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="absolute -bottom-4 -left-2 rounded-xl border border-slate-100 bg-white px-5 py-4 shadow-lg sm:-left-5">
-            <p className="text-sm font-bold text-navy-900">
+          <div className="absolute -bottom-4 -left-2 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-lg sm:-left-5">
+            <p className="text-sm font-bold text-navy-950">
               3 new matches today
             </p>
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-xs font-medium text-slate-600">
               Based on your saved preferences
             </p>
           </div>
         </div>
       </section>
 
-      {/* Employer logo strip */}
+    
       <section
         aria-label="Companies that hire on Surhires"
         className="border-y border-slate-200 bg-white py-10"
       >
         <div className="mx-auto max-w-7xl px-6 md:px-12">
-          <p className="text-center text-sm font-medium uppercase tracking-widest text-slate-500">
+          <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-600">
             Trusted by teams across India
           </p>
           <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
@@ -208,7 +208,7 @@ export default function Home() {
             ].map((company) => (
               <li
                 key={company}
-                className="text-lg font-bold tracking-tight text-slate-400 transition hover:text-navy-900"
+                className="text-lg font-bold tracking-tight text-navy-900/80 transition hover:text-brand-700"
               >
                 {company}
               </li>
@@ -217,17 +217,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How it works */}
+      
       <section className="px-6 py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <p className="font-semibold uppercase tracking-widest text-brand-700">
+            <p className="font-bold uppercase tracking-widest text-brand-700">
               How it works
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">
               Three steps to a better match.
             </h2>
-            <p className="mt-4 leading-7 text-slate-600">
+            <p className="mt-4 leading-7 text-slate-700">
               Whether you are building a career or building a team,
               we keep the process short and predictable.
             </p>
@@ -253,34 +253,34 @@ export default function Home() {
             ].map((item) => (
               <li
                 key={item.step}
-                className="rounded-2xl border border-slate-200 bg-white p-7 transition hover:-translate-y-1 hover:border-brand-500 hover:shadow-lg"
+                className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-brand-500 hover:shadow-lg"
               >
                 <p className="text-sm font-bold text-brand-700">{item.step}</p>
-                <h3 className="mt-4 text-xl font-bold text-navy-900">
+                <h3 className="mt-4 text-xl font-bold text-navy-950">
                   {item.title}
                 </h3>
-                <p className="mt-3 leading-7 text-slate-600">{item.body}</p>
+                <p className="mt-3 leading-7 text-slate-700">{item.body}</p>
               </li>
             ))}
           </ol>
         </div>
       </section>
 
-      {/* Featured roles */}
+     
       <section className="border-y border-slate-200 bg-white px-6 py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="font-semibold uppercase tracking-widest text-brand-700">
+              <p className="font-bold uppercase tracking-widest text-brand-700">
                 Featured roles
               </p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+              <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">
                 Fresh openings, updated daily.
               </h2>
             </div>
             <Link
               href="/jobs"
-              className="rounded-lg border border-slate-300 px-5 py-3 font-semibold text-navy-900 transition hover:border-brand-600 hover:text-brand-700"
+              className="rounded-lg border border-slate-300 bg-white px-5 py-3 font-semibold text-navy-950 shadow-sm transition hover:border-brand-700 hover:text-brand-700"
             >
               Browse all jobs <span aria-hidden="true">→</span>
             </Link>
@@ -290,20 +290,20 @@ export default function Home() {
             {featuredRoles.map((role) => (
               <li
                 key={role.title}
-                className="flex flex-col rounded-2xl border border-slate-200 p-6 transition hover:-translate-y-1 hover:border-brand-500 hover:shadow-lg"
+                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-500 hover:shadow-lg"
               >
-                <span className="inline-flex w-fit rounded-full bg-warm-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-800">
+                <span className="inline-flex w-fit rounded-full border border-brand-200 bg-warm-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-800">
                   {role.tag}
                 </span>
-                <h3 className="mt-4 text-lg font-bold text-navy-900">
+                <h3 className="mt-4 text-lg font-bold text-navy-950">
                   {role.title}
                 </h3>
-                <p className="mt-1 text-sm text-slate-600">{role.company}</p>
-                <p className="mt-3 text-sm text-slate-500">{role.location}</p>
-                <p className="mt-auto pt-4 text-sm font-semibold text-navy-900">
+                <p className="mt-1 text-sm font-medium text-slate-700">{role.company}</p>
+                <p className="mt-2 text-sm text-slate-600">{role.location}</p>
+                <p className="mt-auto pt-4 text-sm font-bold text-navy-950">
                   {role.salary}
                 </p>
-                <p className="mt-1 text-xs font-medium text-brand-700">
+                <p className="mt-1 text-xs font-bold text-brand-700">
                   {role.type}
                 </p>
               </li>
@@ -312,14 +312,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+     
       <section id="testimonials" className="px-6 py-20 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
-            <p className="font-semibold uppercase tracking-widest text-brand-700">
+            <p className="font-bold uppercase tracking-widest text-brand-700">
               Testimonials
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">
               Both sides of the hire, in their words.
             </h2>
           </div>
@@ -328,17 +328,17 @@ export default function Home() {
             {testimonials.map((item) => (
               <li
                 key={item.name}
-                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7"
+                className="flex flex-col rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
               >
-                <span aria-hidden="true" className="text-4xl font-bold text-brand-100">
+                <span aria-hidden="true" className="text-4xl font-bold text-brand-700">
                   &ldquo;
                 </span>
-                <blockquote className="mt-2 leading-7 text-slate-700">
+                <blockquote className="mt-2 leading-7 text-slate-800 font-normal">
                   {item.quote}
                 </blockquote>
                 <p className="mt-6 border-t border-slate-200 pt-5">
-                  <span className="font-semibold text-navy-900">{item.name}</span>
-                  <span className="mt-0.5 block text-sm text-slate-500">
+                  <span className="font-bold text-navy-950">{item.name}</span>
+                  <span className="mt-0.5 block text-sm font-medium text-slate-700">
                     {item.role}
                   </span>
                 </p>
@@ -348,21 +348,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
+    
       <section id="faq" className="border-t border-slate-200 bg-white px-6 py-20 md:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-3">
           <div>
-            <p className="font-semibold uppercase tracking-widest text-brand-700">
+            <p className="font-bold uppercase tracking-widest text-brand-700">
               FAQ
             </p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">
               Questions, answered.
             </h2>
-            <p className="mt-4 leading-7 text-slate-600">
+            <p className="mt-4 leading-7 text-slate-700">
               Still curious? Write to us at{" "}
               <a
                 href="mailto:hello@surhires.example"
-                className="font-medium text-brand-700 underline underline-offset-4 hover:text-brand-800"
+                className="font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800"
               >
                 hello@surhires.example
               </a>
@@ -375,13 +375,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer CTA */}
+      
       <section className="px-6 py-20 md:px-12">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-navy-900 px-7 py-12 text-white sm:px-12 sm:py-16">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-navy-950 px-7 py-12 text-white shadow-xl sm:px-12 sm:py-16">
           <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">
             Ready for what comes next?
           </h2>
-          <p className="mt-4 max-w-xl leading-7 text-slate-300">
+          <p className="mt-4 max-w-xl leading-7 text-slate-200 font-normal">
             Post your first job in under ten minutes — or browse roles
             that respect your skills and your time.
           </p>
@@ -389,13 +389,13 @@ export default function Home() {
           <div className="mt-7 flex flex-wrap gap-4">
             <Link
               href="/jobs"
-              className="rounded-lg bg-brand-500 px-6 py-3 font-semibold text-navy-950 transition hover:bg-brand-100"
+              className="rounded-lg bg-brand-500 px-6 py-3.5 font-bold text-navy-950 shadow-sm transition hover:bg-brand-200 active:bg-brand-200"
             >
               Explore jobs
             </Link>
             <Link
               href="/employers#post-job"
-              className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition hover:bg-navy-800"
+              className="rounded-lg border border-slate-400 bg-navy-900/60 px-6 py-3.5 font-semibold text-white shadow-sm transition hover:bg-navy-800 hover:border-white"
             >
               Post a job
             </Link>

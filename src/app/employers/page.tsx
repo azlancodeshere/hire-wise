@@ -61,15 +61,15 @@ const plans = [
 export default function EmployersPage() {
   return (
     <main className="bg-warm-50 text-navy-950">
-      {/* Hero */}
+      
       <section className="px-6 py-16 text-center md:px-12 md:py-24">
-        <p className="font-semibold uppercase tracking-widest text-brand-700">
+        <p className="font-bold uppercase tracking-widest text-brand-700">
           For employers
         </p>
-        <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-bold leading-tight text-navy-900 md:text-6xl">
+        <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-bold leading-tight text-navy-950 md:text-6xl">
           Find the people who move your business forward.
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700">
           Reach talented people, manage applications in one place and
           build a team ready for what comes next — without the
           agency fees.
@@ -83,14 +83,14 @@ export default function EmployersPage() {
           </Link>
           <Link
             href="#plans"
-            className="rounded-lg border border-slate-300 bg-white px-6 py-4 font-semibold text-navy-900 shadow-sm transition hover:border-brand-600 hover:text-brand-700"
+            className="rounded-lg border border-slate-300 bg-white px-6 py-4 font-semibold text-navy-950 shadow-sm transition hover:border-brand-700 hover:text-brand-700"
           >
             Compare plans
           </Link>
         </div>
       </section>
 
-      {/* Stats strip */}
+     
       <section
         aria-label="Surhires hiring results"
         className="border-y border-slate-200 bg-white py-12"
@@ -103,24 +103,24 @@ export default function EmployersPage() {
             ["92%", "renew after first month"],
           ].map(([stat, label]) => (
             <div key={label}>
-              <dd className="text-3xl font-bold text-navy-900">{stat}</dd>
-              <dt className="mt-2 text-sm text-slate-500">{label}</dt>
+              <dd className="text-3xl font-bold text-navy-950">{stat}</dd>
+              <dt className="mt-2 text-sm font-medium text-slate-700">{label}</dt>
             </div>
           ))}
         </dl>
       </section>
 
-      {/* Pricing */}
+      
       <section id="plans" className="px-6 py-16 md:px-12 md:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="font-semibold uppercase tracking-widest text-brand-700">
+            <p className="font-bold uppercase tracking-widest text-brand-700">
               Pricing
             </p>
-            <h2 className="mt-3 text-3xl font-bold text-navy-900 md:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold text-navy-950 md:text-4xl">
               Plans that grow with your team
             </h2>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-4 text-slate-700">
               Start free. Upgrade when your hiring pipeline needs more
               reach. Cancel anytime.
             </p>
@@ -130,46 +130,46 @@ export default function EmployersPage() {
             {plans.map((plan) => (
               <li
                 key={plan.name}
-                className={`relative flex flex-col rounded-2xl border bg-white p-7 transition ${
+                className={`relative flex flex-col rounded-2xl border bg-white p-7 shadow-sm transition hover:shadow-md ${
                   plan.popular
-                    ? "border-brand-600 shadow-lg ring-1 ring-brand-600"
+                    ? "border-brand-600 shadow-lg ring-2 ring-brand-600"
                     : "border-slate-200 hover:border-slate-300"
                 }`}
               >
                 {plan.popular && (
-                  <span className="absolute -top-3 left-7 inline-flex rounded-full bg-brand-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+                  <span className="absolute -top-3.5 left-7 inline-flex rounded-full bg-brand-700 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-sm">
                     Most popular
                   </span>
                 )}
 
-                <h3 className="text-xl font-bold text-navy-900">{plan.name}</h3>
+                <h3 className="text-xl font-bold text-navy-950">{plan.name}</h3>
                 <p className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-bold text-navy-900">
+                  <span className="text-4xl font-bold text-navy-950">
                     {plan.price}
                   </span>
-                  <span className="text-sm text-slate-500">{plan.priceNote}</span>
+                  <span className="text-sm font-medium text-slate-600">{plan.priceNote}</span>
                 </p>
-                <p className="mt-3 min-h-12 leading-6 text-slate-600">
+                <p className="mt-3 min-h-12 leading-6 text-slate-700">
                   {plan.description}
                 </p>
 
                 <ul className="mt-6 flex flex-col gap-3">
                   {plan.features.map((feature) => (
-                    <li key={feature} className="flex gap-2 text-slate-700">
+                    <li key={feature} className="flex gap-2.5 text-sm text-slate-800">
                       <span aria-hidden="true" className="font-bold text-brand-700">
                         ✓
                       </span>
-                      {feature}
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <a
                   href="#post-job"
-                  className={`mt-8 block rounded-lg px-4 py-3 text-center font-semibold transition ${
+                  className={`mt-8 block rounded-lg px-4 py-3 text-center font-semibold shadow-sm transition ${
                     plan.popular
-                      ? "bg-brand-700 text-white hover:bg-brand-800"
-                      : "border border-slate-300 text-navy-900 hover:bg-slate-50"
+                      ? "bg-brand-700 text-white hover:bg-brand-800 active:bg-brand-800"
+                      : "border border-slate-300 bg-white text-navy-950 hover:bg-warm-100 hover:border-slate-400"
                   }`}
                 >
                   {plan.cta}
@@ -177,27 +177,27 @@ export default function EmployersPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-center text-sm text-slate-500">
+          <p className="mt-6 text-center text-sm font-medium text-slate-600">
             Prices in INR, exclusive of GST. Illustrative plans for this
             assignment — no payment is collected.
           </p>
         </div>
       </section>
 
-      {/* Post a job form */}
+     
       <section
         id="post-job"
         className="border-t border-slate-200 bg-white px-6 py-16 md:px-12 md:py-24"
       >
         <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-2">
           <div>
-            <p className="font-semibold uppercase tracking-widest text-brand-700">
+            <p className="font-bold uppercase tracking-widest text-brand-700">
               Start hiring
             </p>
-            <h2 className="mt-4 text-3xl font-bold text-navy-900 md:text-4xl">
+            <h2 className="mt-4 text-3xl font-bold text-navy-950 md:text-4xl">
               Tell us about the role.
             </h2>
-            <p className="mt-5 max-w-lg leading-7 text-slate-600">
+            <p className="mt-5 max-w-lg leading-7 text-slate-700">
               Share a few details about your opening. This demo form
               validates your information in the browser and shows a
               confirmation message — no backend involved.
@@ -209,11 +209,11 @@ export default function EmployersPage() {
                 "Salary band shown to every candidate",
                 "Applications straight to your inbox",
               ].map((point) => (
-                <li key={point} className="flex gap-3 text-slate-700">
+                <li key={point} className="flex gap-3 text-slate-800 font-medium">
                   <span aria-hidden="true" className="font-bold text-brand-700">
                     ✓
                   </span>
-                  {point}
+                  <span>{point}</span>
                 </li>
               ))}
             </ul>

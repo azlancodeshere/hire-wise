@@ -11,7 +11,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white">
+    <div className="divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white shadow-sm">
       {items.map((item, index) => {
         const isOpen = openIndex === index;
         return (
@@ -23,12 +23,12 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
                 aria-controls={`faq-panel-${index}`}
                 id={`faq-button-${index}`}
                 onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-semibold text-navy-900 transition hover:text-brand-700"
+                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-bold text-navy-950 transition hover:text-brand-700 focus-visible:outline-2 focus-visible:outline-brand-700"
               >
-                {item.question}
+                <span>{item.question}</span>
                 <span
                   aria-hidden="true"
-                  className={`shrink-0 text-brand-700 transition-transform duration-200 ${
+                  className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-50 text-xl font-bold text-brand-700 transition-transform duration-200 ${
                     isOpen ? "rotate-45" : ""
                   }`}
                 >
@@ -41,7 +41,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
               role="region"
               aria-labelledby={`faq-button-${index}`}
               hidden={!isOpen}
-              className="px-6 pb-5 leading-7 text-slate-600"
+              className="px-6 pb-6 leading-7 text-slate-700"
             >
               {item.answer}
             </div>
