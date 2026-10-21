@@ -198,7 +198,7 @@ export default function JobSearch() {
         <div className="flex items-end gap-3">
           <button
             type="submit"
-            className="flex-1 rounded-lg bg-brand-700 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-brand-800 active:bg-brand-800"
+            className="flex-1 rounded-lg bg-brand-700 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-brand-800 active:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-50"
           >
             Apply filters
           </button>
@@ -206,7 +206,7 @@ export default function JobSearch() {
             <button
               type="button"
               onClick={clearFilters}
-              className="rounded-lg border border-slate-300 bg-white px-4 py-3 font-semibold text-navy-950 shadow-sm transition hover:bg-warm-100 hover:border-slate-400"
+              className="rounded-lg border border-slate-300 bg-white px-4 py-3 font-semibold text-navy-950 shadow-sm transition hover:border-slate-400 hover:bg-warm-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
               Clear
             </button>
